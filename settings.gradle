@@ -1,0 +1,2 @@
+include ':app', ':bubbleicontabbarandroid-1.0.1', ':Multimager', ':FFmpegAndroid'
+rootProject.name='All Video downloads'

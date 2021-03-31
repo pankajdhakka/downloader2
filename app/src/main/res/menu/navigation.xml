@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_facebook"
+        android:icon="@drawable/video"
+        android:iconTint="@color/textWhite"
+        android:title="Videos"/>
+
+    <item
+        android:id="@+id/navigation_instagram"
+        android:icon="@drawable/download_logo"
+        android:iconTint="@color/textWhite"
+        android:title="Downloads"/>
+
+    <item
+        android:id="@+id/navigation_whatsapp"
+        android:icon="@drawable/abouts"
+        android:iconTint="@color/textWhite"
+        android:title="About App"/>
+
+</menu>

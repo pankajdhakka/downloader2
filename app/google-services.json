@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1048628750197",
+    "firebase_url": "https://status-saver-2021.firebaseio.com",
+    "project_id": "status-saver-2021",
+    "storage_bucket": "status-saver-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048628750197:android:5dc1f7376cb526b891153c",
+        "android_client_info": {
+          "package_name": "com.pk.developer.downloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048628750197-pskito6ni36n55s0jloi46d01kp82p7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA26OmvQ5or0JvnpHqV6_m8tbNolIvNKuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048628750197-pskito6ni36n55s0jloi46d01kp82p7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

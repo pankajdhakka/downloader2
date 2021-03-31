@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/insta"
+        android:icon="@drawable/instagram_logo1"
+        android:title="Instagram"/>
+
+    <item
+        android:id="@+id/whatsapp"
+        android:icon="@drawable/wapsp1"
+        android:title="Whatsapp"/>
+
+
+    <item
+        android:id="@+id/tiktok"
+        android:icon="@drawable/tiktok1"
+        android:title="Tik Tok"/>
+    <item
+        android:id="@+id/facebook"
+        android:icon="@drawable/facebook1"
+        android:title="Facebook"/>
+
+    <item
+        android:id="@+id/twitter"
+        android:icon="@drawable/twitter_logo1"
+        android:title="More"/>
+
+    <item
+        android:id="@+id/vimeo"
+        android:icon="@drawable/tools_logo1"
+        android:title="Tools"/>
+
+    <item
+        android:id="@+id/downloads"
+        android:icon="@drawable/download_logo2"
+        android:title="Downloads"/>
+    <item
+        android:id="@+id/shareapp"
+        android:icon="@drawable/ic_share_black"
+        android:title="Share App"/>
+    <item
+        android:id="@+id/rateapp"
+        android:icon="@drawable/rateapp1"
+        android:title="Rate App"/>
+
+</menu>

@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#000">
+
+
+    <FrameLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+
+        android:background="@android:color/black">
+
+        <com.universalvideoview.UniversalVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:uvv_fitXY="false" />
+
+        <com.universalvideoview.UniversalMediaController
+            android:id="@+id/media_controller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:uvv_scalable="false" />
+
+    </FrameLayout>
+
+
+    <ImageButton
+        android:id="@+id/story_video"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:alpha="0.85"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_play_circle" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/story_button_options"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:padding="10dp"
+            android:id="@+id/saveimages"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_crop_original_black_24dp"
+                android:paddingLeft="10dp"
+                android:text="Save"
+                android:textSize="18sp"
+                android:drawablePadding="-10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorAccent"
+            android:padding="10dp"
+            android:id="@+id/shareapp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_sharee"
+                android:paddingLeft="10dp"
+                android:text="Share"
+                android:textSize="18sp"
+                android:drawablePadding="-10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="7dp"
+            android:visibility="gone"
+            android:background="@drawable/round_button_border"
+            android:src="@drawable/ic_sharee"
+            android:id="@+id/story_button_share"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="7dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/story_button_share"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/round_button_border"
+            android:src="@drawable/ic_save"
+            android:id="@+id/story_button_save"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

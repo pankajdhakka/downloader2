@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/SetStatus"
+        android:icon="@drawable/ic_whatsapp_logo"
+        android:title="SET AS STATUS" />
+
+    <item
+        android:id="@+id/Download"
+        android:icon="@drawable/icon_video_downloader_white"
+        android:title="DOWNLOAD" />
+
+    <item
+        android:id="@+id/Share"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="SHARE" />
+</menu>

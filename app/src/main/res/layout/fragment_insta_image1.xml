@@ -1,0 +1,147 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner">
+        </com.google.android.gms.ads.AdView>
+        <TextView
+            android:id="@+id/choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Enter the Download Link"
+            android:textColor="@color/primary_text"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:id="@+id/llurl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edit_text_border"
+            android:orientation="horizontal">
+
+            <EditText
+
+                android:id="@+id/input_TiktokURL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.3"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Enter Instagram Profile ID"
+                android:inputType="textUri"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:text="Download type"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/dtypespinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+
+                android:layout_toRightOf="@+id/dtype"
+                android:gravity="center"
+                android:textAlignment="center" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dtype"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_background_gradient"
+            android:onClick="proceed"
+            android:text="Fetch Details"
+            android:layout_margin="5dp"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/open_tiktok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_background_gradient"
+            android:text="Open"
+            android:textColor="#ffffffff"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/imgtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/download"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/instaimg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/imgtxt"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="18dp"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/instadownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/instaimg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_background_gradient"
+            android:onClick="instadload"
+            android:text="Download"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible" />
+
+
+
+    </LinearLayout>
+</ScrollView>

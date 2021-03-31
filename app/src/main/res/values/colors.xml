@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2da639</color>
+    <color name="colorPrimaryDark">#048310</color>
+    <color name="colorPrimaryLight">#FFCDD2</color>
+    <color name="colorBackground">#F5FCFF</color>
+    <color name="colorAccent">#000</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="textBlack">#000000</color>
+    <color name="textWhite">#ffffff</color>
+    <color name="light_black">#ff333333</color>
+    <color name="editext_border">#B4ACBD</color>
+    <color name="colorDark">#000000</color>
+    <color name="darkText">#838383</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="colorClick">#5CB6B3</color>
+    <color name="lt_grey">#FFCCCCCC</color>
+    <color name="red">#fa3030</color>
+    <color name="continue_button_red_dark">#c43c3c</color>
+    <color name="continue_button_red">#ec4a4a</color>
+    <color name="cancel_button_grey">#e7dede</color>
+    <color name="cancel_button_grey_dark">#d1d0d0</color>
+    <color name="green">#2b8c56</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="home">#f4ab29</color>
+    <color name="clock">#5538b0</color>
+    <color name="folder">#a9418f</color>
+    <color name="menu">#4290a3</color>
+    <color name="colorPrimaryTranslucent">#aa00695c</color>
+    <color name="colorPrimary100">#B2DFDB</color>
+    <color name="blue">#38479c</color>
+    <color name="savedSelectedItemColor">#837f92ff</color>
+
+    <color name="colorBule">#005bb4</color>
+    <color name="colorGray">#dedede</color>
+    <color name="colorGray1">#efefef</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack1">#80000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPlayerBack">#80000000</color>
+    <color name="colorBar">@color/colorPrimaryDark</color>
+    <color name="colorBarHighlight">@color/colorPrimary</color>
+    <color name="colorThumb">@color/colorAccent</color>
+    <color name="colorThumbPressed">@color/colorAccent</color>
+
+    <color name="selected_dot">#2D9CDB</color>
+    <color name="idle_dot">#662D9CDB</color>
+    <color name="ob_header">#4A4A4A</color>
+    <color name="ob_desc">#4A4A4A</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>

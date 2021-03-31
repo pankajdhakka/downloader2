@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/instavideo"
+        android:icon="@drawable/url"
+        android:title="URL"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/instapost"
+        android:icon="@drawable/facebook"
+        android:title="Facebook"
+        app:showAsAction="always|withText"/>
+</menu>
