@@ -105,4 +105,21 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics:17.2.2'
     implementation 'com.onesignal:OneSignal:3.10.8'
 
+    //libraries for image slider kenz burn
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+
+    //custom chrome tab
+    implementation 'com.android.support:customtabs:28.0.0'
+
+    //admob
+//     implementation 'com.google.android.gms:play-services-ads:19.8.0'
+
+
+
+
+
+
+
+
+
 }

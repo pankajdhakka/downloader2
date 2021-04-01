@@ -12,18 +12,33 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
-import com.pk.developer.downloader.BuildConfig;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.pk.developer.downloader.R;
 import com.pk.developer.downloader.WaStatus.WaActivity;
 import com.pk.developer.downloader.activities.ViewFilesActivity;
+import com.pk.developer.downloader.adapters.ImageAdapter;
 import com.pk.developer.downloader.fbdownload.FBHOMENew;
 import com.pk.developer.downloader.insta.IntaMainActivity;
-import com.pk.developer.downloader.otherurl.OtherURLActivity;
+import com.pk.developer.downloader.models.Image;
 import com.pk.developer.downloader.tiktokdownload.TikTokDownloadActivity;
 import com.pk.developer.downloader.videoutils.MainActivity;
 
-public class HomeFragment extends Fragment {
+import java.util.ArrayList;
+import java.util.List;
+
+public class HomeFragment extends Fragment  {
+
+
+    private AdView mAdView;
+    ViewPager viewPager;
+    ImageAdapter imageAdapter;
+    List<Image> images;
 
     public HomeFragment() {
     }
@@ -32,6 +47,28 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.new_home_fragment , container, false);
+
+        images = new ArrayList<>();
+        images.add(new Image(R.drawable.image2));
+        images.add(new Image(R.drawable.image1));
+        imageAdapter = new ImageAdapter(images, getActivity());
+        viewPager = rootView.findViewById(R.id.viewPager);
+        viewPager.setAdapter(imageAdapter);
+        viewPager.setPadding(30,0,30,0);
+
+
+        MobileAds.initialize(getActivity(), new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
+
+        mAdView = rootView.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
 
         LinearLayout insta = rootView.findViewById(R.id.btnInsta);
         insta.setOnClickListener(new View.OnClickListener() {
@@ -69,14 +106,14 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        LinearLayout twitter = rootView.findViewById(R.id.btnTwitter);
-        twitter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), OtherURLActivity.class);
-                startActivity(intent);
-            }
-        });
+//        LinearLayout twitter = rootView.findViewById(R.id.btnTwitter);
+//        twitter.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getContext(), OtherURLActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         LinearLayout vimeo = rootView.findViewById(R.id.btnVimeo);
         vimeo.setOnClickListener(new View.OnClickListener() {
